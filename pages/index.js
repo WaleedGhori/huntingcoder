@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 // import Dummy from "./component/dummy";
@@ -28,37 +28,30 @@ export default function Home() {
         <h1 className={styles.title}>Hunting Coder</h1>
 
         <div className={styles.divwraper}>
-        <Image className={styles.homeimg} src="/Home.avif" width={400} height={233} />
+        {/* <Image className={styles.homeimg} src="/Home.avif" width={400} height={233} /> */}
+        <img className={styles.homeimg} src="/Home.avif" width={350} height={233} alt="hunting coder" />
         </div>
         <p className={styles.description}>let`s make Coding easy for everyone!</p>
         <div className="blog">
           <h2>Popular Blog</h2>
           <div className="blogItem">
-            <h3>JavaScript</h3>
-            <p>JavaScript is used to write a logic for web</p>
+            <h3>Is JavaScript Powerfull</h3>
+            <p>JavaScript is used to write a logic for web and its help to give functionality to 
+              user
+            </p>
           </div>
           <div className="blogItem">
-            <h3>JavaScript</h3>
-            <p>JavaScript is used to write a logic for web</p>
+            <h3>Is JavaScript is good for Gaming?</h3>
+            <p>JavaScript is used to write a logic for web. You can use javaScript as a scripting |
+              for gaming and javaScript is after the C# most recommonded language in that time..
+            </p>
           </div>
-          <div className="blogItem">
-            <h3>JavaScript</h3>
-            <p>JavaScript is used to write a logic for web</p>
-          </div>
+     
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+       
       </footer>
     </div>
   );
