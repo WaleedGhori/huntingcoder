@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <style jsx>
+      {/* <style jsx>
         {`
             h2{
               font-size:20px;
@@ -16,7 +16,7 @@ export default function Home() {
               font-size:38px;
             }
         `}
-      </style>
+      </style> */}
       {/* <Dummy/> */}
       <Head>
         <title>Hunting Coder</title>
@@ -25,34 +25,47 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Hunting Coder</h1>
-
         <div className={styles.divwraper}>
-        {/* <Image className={styles.homeimg} src="/Home.avif" width={400} height={233} /> */}
-        <img className={styles.homeimg} src="/Home.avif" width={350} height={233} alt="hunting coder" />
+          {/* <Image className={styles.homeimg} src="/Home.avif" width={400} height={233} /> */}
+          <img
+            className={styles.homeimg}
+            src="/Home.avif"
+            width={237}
+            height={158}
+            alt="hunting coder"
+          />
         </div>
-        <p className={styles.description}>let`s make Coding easy for everyone!</p>
-        <div className="blog">
-          <h2>Popular Blog</h2>
+        <span><h1 className={styles.title}>&lt;HuntingCoder/&gt;</h1></span>
+        <div>
+          <h2 className={styles.h2}>Popular Blog</h2>
+        
           <div className="blogItem">
-            <h3>Is JavaScript Powerfull</h3>
-            <p>JavaScript is used to write a logic for web and its help to give functionality to 
-              user
-            </p>
+            <h3 className={styles.h3}>Is JavaScript Can used to be a gaming</h3>
+            <p className={styles.p}> 
+              JavaScript is used to write a logic for web and its help to give
+              functionality to user</p>
+              <button className={styles.btn}>Read More</button>
           </div>
           <div className="blogItem">
-            <h3>Is JavaScript is good for Gaming?</h3>
-            <p>JavaScript is used to write a logic for web. You can use javaScript as a scripting |
-              for gaming and javaScript is after the C# most recommonded language in that time..
+            <h3 className={styles.h3}>Is JavaScript Powerfull for webDevelopment</h3>
+            <p className={styles.p}>
+              JavaScript is used to write a logic for web and its help to give
+              functionality to user
             </p>
+              <button className={styles.btn}>Read More</button>
           </div>
-     
-        </div>
+          <div className="blogItem">
+            <h3 className={styles.h3}>Is JavaScript Powerfull in 2022</h3>
+            <p className={styles.p}>
+              JavaScript is used to write a logic for web and its help to give
+              functionality to user 
+            </p>
+              <button className={styles.btn}>Read More</button>
+            </div>
+          </div>
       </main>
 
-      <footer className={styles.footer}>
-       
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }
