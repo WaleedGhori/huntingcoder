@@ -54,11 +54,10 @@ const Contact = () => {
           <label htmlFor="name" className={styles.formlabel}>
             Name
           </label>
-          <input
+          <input className={styles.input}
             value={name}
             onChange={handleChange}
             type="text"
-            className="form-control"
             id="name"
             name="name"
             aria-describedby="emailHelp"
@@ -68,11 +67,10 @@ const Contact = () => {
           <label htmlFor="email" className={styles.formlabel}>
             Email address
           </label>
-          <input
+          <input className={styles.input}
             value={email}
             onChange={handleChange}
             type="email"
-            className="form-control"
             id="email"
             name="email"
             aria-describedby="emailHelp"
@@ -82,26 +80,27 @@ const Contact = () => {
           <label htmlFor="phone" className={styles.formlabel}>
             Phone
           </label>
-          <input
+          <input className={styles.input}
             value={phone}
             onChange={handleChange}
             type="number"
-            className="form-control"
             id="phone"
             name="phone"
           />
         </div>
-        <div className="mb-3g">
-          <textarea
+        <div className={styles.mb3}>
+        <label htmlFor="phone" className={styles.formlabel}>
+            Enter you Text here
+          </label>
+          <textarea className={styles.input}
             value={desc}
             name="desc"
             onChange={handleChange}
-            className="form-control"
             placeholder="About your self"
             id="desc"
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className={styles.btn}>
           Submit
         </button>
       </form>
