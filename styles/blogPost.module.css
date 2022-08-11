@@ -12,4 +12,19 @@
 
 .container {
     padding: 0 18rem;
-  }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        padding: 0 5rem;
+      }
+}
+@media screen and (max-width: 587px) {
+    .container {
+        padding: 0 1.7rem;
+    }
+    .stylesh1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

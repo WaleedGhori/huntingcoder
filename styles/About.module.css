@@ -5,3 +5,10 @@
 .center{
     text-align: center;
 }
+
+@media screen and (max-width: 400px) {
+    .container{
+        margin: 45px auto;
+        max-width: 90vw;
+    }
+  }

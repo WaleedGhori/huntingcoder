@@ -25,4 +25,14 @@
     font-size: 12px;
     margin-bottom: 9px;
     width: 100%;
-  }
+}
+@media screen and (max-width: 400px) {
+    .styleh1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .container{
+        max-width:75vw;
+        margin-top: 50px;
+    }
+}

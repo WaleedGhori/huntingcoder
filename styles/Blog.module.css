@@ -19,3 +19,17 @@
 .blogItemp{
   max-width: 45vw;
 }
+
+@media screen and (max-width: 400px) {
+  .main{
+      margin: 0px auto;
+      max-width: 90vw;
+  }
+  .blogItemh3 {
+    font-size: 1.3rem;
+  }
+  .blogItemp{
+    max-width: 90vw;
+  }
+
+}

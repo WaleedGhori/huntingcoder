@@ -18,7 +18,7 @@ const Contact = () => {
     })
       .then((response) => response.text())
       .then((data) => {
-        console.log("Success:", data);
+        // console.log("Success:", data);
         alert("Your Form Submit Success fully");
         setDesc("");
         setEmail("");
@@ -29,7 +29,7 @@ const Contact = () => {
         console.error("Error:", error);
       });
 
-    console.log(name, email, phone, desc);
+    // console.log(name, email, phone, desc);
   };
   const handleChange = (e) => {
     if (e.target.name === "name") {
@@ -44,11 +44,11 @@ const Contact = () => {
     if (e.target.name === "desc") {
       setDesc(e.target.value);
     }
-    console.log(e, "This is a handle change");
+    // console.log(e, "This is a handle change");
   };
   return (
     <div className={styles.container}>
-      <h1>Contact us</h1>
+      <h1 className={styles.styleh1}>Contact us</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.mb3}>
           <label htmlFor="name" className={styles.formlabel}>
